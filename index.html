@@ -34,12 +34,25 @@
   }
 
   /* ── CANVAS BACKGROUND ── */
+  #satellite-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    background-image: url('Peoria-Illinois.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.18;
+    pointer-events: none;
+  }
+
   #canvas-bg {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     z-index: 0;
-    opacity: 0.35;
+    opacity: 0.25;
     pointer-events: none;
   }
 
@@ -741,6 +754,7 @@
 </head>
 <body>
 
+<div id="satellite-bg"></div>
 <canvas id="canvas-bg"></canvas>
 
 <nav>
@@ -769,7 +783,7 @@
         </p>
         <div class="hero-btns">
           <a href="#publications" class="btn btn-primary">View Publications</a>
-          <a href="mailto:yu.shen@duke.edu" class="btn btn-outline">Get in Touch</a>
+          <a href="/cdn-cgi/l/email-protection#19606c376a717c77597d6c727c377c7d6c" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
       <div class="hero-stats">
@@ -1026,9 +1040,9 @@
         </p>
       </div>
       <div class="contact-links">
-        <a href="mailto:yu.shen@duke.edu" class="contact-link">
+        <a href="/cdn-cgi/l/email-protection#166f6338657e73785672637d7338737263" class="contact-link">
           <span class="contact-link-icon">✉</span>
-          <span>yu.shen@duke.edu</span>
+          <span><span class="__cf_email__" data-cfemail="48313d663b202d26082c3d232d662d2c3d">[email&#160;protected]</span></span>
         </a>
         <a href="https://scholar.google.com" class="contact-link" target="_blank">
           <span class="contact-link-icon">🎓</span>
@@ -1044,11 +1058,11 @@
 </section>
 
 <footer>
-  <div class="footer-text">© 2025 Yu Shen · yu.shen@duke.edu</div>
+  <div class="footer-text">© 2025 Yu Shen · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1168643f6279747f5175647a743f747564">[email&#160;protected]</a></div>
   <div class="footer-text">Built with ✦ and remote sensing love</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── PUBLICATIONS DATA ──
 const pubs = [
   // 2026
@@ -1210,24 +1224,4 @@ function draw() {
     ctx.fillStyle = '#00d4aa';
     ctx.beginPath();
     ctx.arc(sx, sy, 2.5, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Glow
-    ctx.globalAlpha = 0.15;
-    const grd = ctx.createRadialGradient(sx, sy, 0, sx, sy, 12);
-    grd.addColorStop(0, '#00d4aa');
-    grd.addColorStop(1, 'transparent');
-    ctx.fillStyle = grd;
-    ctx.beginPath();
-    ctx.arc(sx, sy, 12, 0, Math.PI * 2);
-    ctx.fill();
-  });
-
-  ctx.globalAlpha = 1;
-  t++;
-  requestAnimationFrame(draw);
-}
-draw();
-</script>
-</body>
-</html>
+    ctx.fi
