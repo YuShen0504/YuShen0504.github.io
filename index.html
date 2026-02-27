@@ -310,14 +310,8 @@
   .timeline-item {
     position: relative;
     padding: 0 0 40px 36px;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.6s;
-  }
-
-  .timeline-item.visible {
     opacity: 1;
-    transform: translateX(0);
+    transition: all 0.6s;
   }
 
   .timeline-dot {
@@ -367,13 +361,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  .research-card.visible {
     opacity: 1;
-    transform: translateY(0);
   }
 
   .research-card:hover {
@@ -446,13 +434,10 @@
     gap: 20px;
     padding: 20px 0;
     border-bottom: 1px solid var(--border);
-    opacity: 0;
-    transform: translateY(10px);
+    opacity: 1;
     transition: all 0.4s;
     align-items: start;
   }
-
-  .pub-item.visible { opacity: 1; transform: translateY(0); }
 
   .pub-num {
     font-family: 'DM Mono', monospace;
@@ -522,12 +507,9 @@
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 28px;
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
     transition: all 0.5s;
   }
-
-  .skill-group.visible { opacity: 1; transform: translateY(0); }
 
   .skill-group-title {
     font-family: 'DM Mono', monospace;
@@ -575,12 +557,9 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 4px;
-    opacity: 0;
-    transform: translateX(-20px);
+    opacity: 1;
     transition: all 0.5s;
   }
-
-  .award-item.visible { opacity: 1; transform: translateX(0); }
 
   .award-year {
     font-family: 'DM Mono', monospace;
@@ -604,8 +583,7 @@
     gap: 40px;
   }
 
-  .service-block { opacity: 0; transform: translateY(20px); transition: all 0.5s; }
-  .service-block.visible { opacity: 1; transform: translateY(0); }
+  .service-block { opacity: 1; transition: all 0.5s; }
 
   .service-block-title {
     font-family: 'DM Mono', monospace;
